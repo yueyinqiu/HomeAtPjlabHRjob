@@ -1,6 +1,9 @@
 { ... }: {
   programs.bash.enable = true;
   programs.bash.bashrcExtra = ''
+    . /etc/bash.bashrc
+    PROMPT_COMMAND=("history -a" "''${PROMPT_COMMAND[@]}")
+
     HTTP_PROXY_VAL=''${MY_HTTP_PROXY:-"http://httpproxy-headless.kubebrain.svc.pjlab.local:3128"}
     HTTPS_PROXY_VAL=''${MY_HTTPS_PROXY:-"http://httpproxy-headless.kubebrain.svc.pjlab.local:3128"}
     NO_PROXY_VAL=''${MY_NO_PROXY:-"127.0.0.1,10.0.0.0/8,100.96.0.0/12,.pjlab.org.cn,.pjh-service.org.cn,35.220.164.252"}
