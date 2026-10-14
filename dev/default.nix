@@ -8,7 +8,6 @@ pkgs.mkShell {
         import ./packages/${name} {
           pkgs = pkgs;
           name = name;
-          nix-airgap = nix-airgap;
         }
       )
       (
