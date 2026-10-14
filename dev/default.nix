@@ -1,4 +1,4 @@
-{ pkgs, nix-airgap, ... }:
+{ pkgs, ... }:
 
 pkgs.mkShell {
   packages =
