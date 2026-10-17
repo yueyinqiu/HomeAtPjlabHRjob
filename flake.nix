@@ -6,6 +6,7 @@
     home-manager.url = "github:nix-community/home-manager/master";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     home-manager-vscode-server-machine-settings.url = "github:yueyinqiu/HomeManagerVscodeServerMachineSettings";
+    never-idle.url = "github:yueyinqiu/NeverIdleNix";
   };
 
   outputs = inputs: {
@@ -16,6 +17,7 @@
       inputs.home-manager.lib.homeManagerConfiguration {
         pkgs = inputs.nixpkgs.legacyPackages.${system};
         extraSpecialArgs = {
+          never-idle = inputs.never-idle.packages.${system};
         };
         modules = [
           inputs.home-manager-vscode-server-machine-settings.homeManagerModules.home-manager-vscode-server-machine-settings
