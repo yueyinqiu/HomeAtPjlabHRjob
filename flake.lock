@@ -51,41 +51,7 @@
         "type": "github"
       }
     },
-    "never-idle": {
-      "inputs": {
-        "nixpkgs": "nixpkgs"
-      },
-      "locked": {
-        "lastModified": 1792220806,
-        "narHash": "sha256-J/uucTkRvGvwhkH5hlJwJK3ceqGzxGpfSA3jMpxz6w0=",
-        "owner": "yueyinqiu",
-        "repo": "NeverIdleNix",
-        "rev": "465bfbb2b8cce506e3cd63c6ba0a8b47b73aea93",
-        "type": "github"
-      },
-      "original": {
-        "owner": "yueyinqiu",
-        "repo": "NeverIdleNix",
-        "type": "github"
-      }
-    },
     "nixpkgs": {
-      "locked": {
-        "lastModified": 1791956154,
-        "narHash": "sha256-jBYGPi4udQ9uo4KQp9m2J0546nJVQitG15gvZSaVVAs=",
-        "owner": "NixOS",
-        "repo": "nixpkgs",
-        "rev": "55bfb4d7437bd4e09ab7cba58a43bd68eb310044",
-        "type": "github"
-      },
-      "original": {
-        "owner": "NixOS",
-        "ref": "nixos-unstable",
-        "repo": "nixpkgs",
-        "type": "github"
-      }
-    },
-    "nixpkgs_2": {
       "locked": {
         "lastModified": 1791734076,
         "narHash": "sha256-i5qk1kLiit98rRbh1AXmWBNT9QXC/y4l5Wk/u5EdpDQ=",
@@ -106,8 +72,7 @@
         "home-manager": "home-manager",
         "home-manager-vscode-server-machine-settings": "home-manager-vscode-server-machine-settings",
         "import-tree": "import-tree",
-        "never-idle": "never-idle",
-        "nixpkgs": "nixpkgs_2"
+        "nixpkgs": "nixpkgs"
       }
     }
   },
