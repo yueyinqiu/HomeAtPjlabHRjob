@@ -3,8 +3,8 @@
     enable = true;
 
     settings = {
-      defaultProvider = "35-220-164-252-3888";
-      defaultModel = "deepseek-v4-pro";
+      defaultProvider = "tensoris";
+      defaultModel = "deepseek-v4-pro-0813";
       defaultThinkingLevel = "low";
 
       retry = {
@@ -14,16 +14,16 @@
 
     models = {
       providers = {
-        "35-220-164-252-3888" = {
-          baseUrl = "https://api.boyuerichdata.opensphereai.com/v1";
+        "tensoris" = {
+          baseUrl = "https://api.tensoris.ai/v1";
           api = "openai-completions";
           compat = {
             supportsDeveloperRole = false;
           };
           models = [
             {
-              id = "deepseek-v4-pro";
-              name = "deepseek-v4-pro";
+              id = "deepseek-v4-pro-0813";
+              name = "deepseek-v4-pro-0813";
               contextWindow = 900000;
               maxTokens = 384000;
               reasoning = true;
